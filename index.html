@@ -1,222 +1,603 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
-  
-
-
-
-
-
-
-
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Dinesh Sudham - Embedded Linux Kernel Developer</title>
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="dns-prefetch" href="//fonts.gstatic.com">
-<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
-<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/basic.css">
-    <link rel="stylesheet" type="text/css" href="/highlight.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link rel="alternate" type="application/rss+xml" title="Dinesh Sudham; Feed" href="feed.xml">
-<meta name="description" content="My blog about Linux Kernel">
-<link rel="manifest" type="application/manifest+json; charset=utf-8" href="/manifest.json" />
-<meta name="robots" content="all">
-<meta name="author" content="Dinesh Sudham">
-
-
-<link rel="canonical" href="https:/dineshsudham.github.io/">
-<link rel="alternate" type="application/rss+xml" title="RSS Feed for Dinesh Sudham - embedded Linux Kernel developer" href="/feed.xml" />
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="/css/pixyll.css?202407211217" type="text/css">
-
-<!-- Fonts -->
-
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic&amp;subset=latin-ext,latin">
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:900,300&amp;subset=latin-ext,latin">
-
-
-
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-
-
-<!-- MathJax -->
-
-
-<!-- Verifications -->
-
-
-
-<!-- Open Graph -->
-<!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Dinesh Sudham - embedded Linux kernel developer">
-<meta property="og:description" content="My blog about Linux Kernel">
-<meta property="og:url" content="https://DineshSudham.github.io/">
-<meta property="og:site_name" content="Dinesh Sudham - embedded Linux Kernel developer">
-
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary" />
-
-<meta name="twitter:title" content="Dinesh Sudham - embedded Linux Kernel developer" />
-<meta name="twitter:description" content="My blog about Linux Kernel " />
-<meta name="twitter:url" content="https://DienshSudham.github.io/" />
-
-
-<!-- Icons -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/splash-512x512.png">
-<link rel="icon" type="image/webp" sizes="192x192" href="/favicon-192x192.webp">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJ2BKC3BNH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-VJ2BKC3BNH');
-    </script>
-
-</head>
-
-<body class="site animated fade-in-down">
-  
- 
-
-  <div class="site-wrap">
-    <header class="site-header px2 px-responsive" style="background-color: #f0f8f5;">
-    <div class="mt2 wrap">
-        <div class="measure">
-            <a href="/" class="site-title">Dinesh Sudham - embedded Linux Kernel developer</a>
-            <nav class="site-nav">
-                
-
-
-
-    
-    
-    
-    
-        <a class="nav-link" href="/about/">About me</a>
-    
-
-    
-
-    
-    
-    
-    
-        <a class="nav-link" href="/contact/">Say Hello</a>
-    
-
-    
-
-
-            </nav>
-            <div class="clearfix"></div>
-            
-                <div class="social-icons">
-  <div class="social-icons-right">
-    
-      <a class="fa fa-github" href="https://github.com/DineshSudham" aria-label="GitHub Dinesh Sudham"></a>
-    
-    
-    
-    
-    <a class="fa fa-rss" href="/feed.xml" aria-label="RSS"></a>
-    
-    
-    
-    
-    
-      <a class="fa fa-envelope" href="mailto:dinesh.sudham@gmail.com" aria-label="Email me"></a>
-    
-    
-    <a class="fa fa-linkedin" href="https://in.linkedin.com/in/dinesh-sudham-40433b65" aria-label="LinkedIn Dinesh Sudham"></a>
-    
-    
-    
-    
-    
-  </div>
-  <div class="right">
-    
-    
-    
-  </div>
-</div>
-<div class="clearfix"></div>
-
-            
-        </div>
-    </div>
-</header>
-
-
- 
-  <!DOCTYPE html>
-<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer</title>
-    <style>
-        .linkedin-link {
-            font-weight: bold;
-            color: #0000CD; /* Dark blue */
-            text-decoration: none; /* Optional: removes underline from the link */
-        }
 
-        .linkedin-link:hover {
-            text-decoration: underline; /* Optional: underlines the link on hover */
-        }
-    </style>
-</head>
-<body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.6.3">
 
-    <footer class="center">
-      <div class="measure">
-        <small>
-        </small>
-      </div>
-      <div class="footer-foot">
-        <img src="/dinesh.jpg" alt="Dinesh Sudham" class="avatar" />
-        <p>
-          Dinesh Sudham, 2024
-        </p>
-        <p>
-          Follow me on <a href="https://in.linkedin.com/in/dinesh-sudham-40433b65" class="linkedin-link">LinkedIn</a>
-        </p>
-      </div>
-    </footer>
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Dinesh Sudham">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Linux Kernel Developer">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dineshsudham.github.io/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="rgb(217, 141, 149)">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
-    <script type="text/javascript">
-        if ("serviceWorker" in navigator) {
-          navigator.serviceWorker.register("/sw.js")
-        }
-    </script>
-</body>
-</html>
-    <footer>
-      <span>Copyright</span><span><a href="https://dinesh.sudham.github.io">Dinesh Sudham</a></span><span>2024</span>
-    </footer>
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106967206-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-106967206-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Sinead Morris">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://dineshsudham.github.io/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Dinesh Sudham">
+  <meta property="og:url" content="https://dineshsudham.github.io/">
+  <meta property="og:title" content="Dinesh Sudham">
+  <meta property="og:description" content="Linux Kernel Developer"><meta property="og:image" content="https://dineshsudham.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://dineshsudham.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2024-05-05T00:00:00&#43;00:00">
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://sineadmorris.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://dineshsudham.github.io/"
+}
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Dinesh Sudham</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Sinead Morris</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Sinead Morris</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about" data-target="#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+      
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+       
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+      
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        
+
+      
+
+        
+    
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+
+
+
+
+
+
+
+
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="about" class="home-section wg-about   "  >
+    <div class="container">
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
-
